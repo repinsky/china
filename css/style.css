@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'HandelsonTwo';
+    src: url('../fonts/HandelsonTwoCYR-Two.woff2') format('woff2'),
+        url('../fonts/HandelsonTwoCYR-Two.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffdbc3;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400   
+}
+
+.ft-handelson {
+    font-family: 'HandelsonTwo';
+}
