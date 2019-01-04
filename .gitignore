@@ -1,2 +1,4 @@
 
 resources/
+.htaccess
+.htpasswd
