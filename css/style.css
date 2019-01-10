@@ -7,11 +7,213 @@
 }
 
 body {
-    background-color: #ffdbc3;
     font-family: 'Rubik', sans-serif;
-    font-weight: 400   
+    font-weight: 400;
+	background: #ffdbc3;
 }
 
 .ft-handelson {
     font-family: 'HandelsonTwo';
+}
+
+a {
+	transition: all ease .185s;
+	color: #c73b3e
+}
+
+a:hover {
+	color: #141414
+}
+
+.preface-hero {
+	background: 
+}
+
+.icon {
+	font-size: 0;
+	line-height: 0;
+	display: inline-block;
+}
+
+.text-red {
+	color: #c73b3e
+}
+
+.text-black {
+	color: #141414
+}
+
+.site-name {
+	font-weight: 700;
+	color: #141414;
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+.header {
+	padding-top: 22px;
+	position: relative;
+	z-index: 3
+}
+
+.header__logo,
+.header__logo:hover {
+	text-decoration: none;
+}
+
+.header__social {
+	margin-left: auto;
+}
+
+.social-list {
+	display: flex;
+	align-items: center;
+}
+
+.social-list__item {
+	margin-left: 28px;
+}
+
+.social-list__link,
+.social-list__link .icon {
+	display: block;
+}
+
+svg path {
+	transition: all ease .185s
+}
+
+.social-list__link svg path {
+	fill: #141414;
+}
+
+.social-list__link:hover svg path {
+	fill: #bd3336;
+}
+
+.headings {
+	margin-top: 252px;
+	max-width: 590px;
+	position: relative;
+	z-index: 3;
+	margin-left: 80px;
+}
+
+.headings__header {
+	position: relative;
+}
+
+.headings__header h1 {
+	font-size: 76px;
+	line-height: 64px;
+	color: #fef4ed;
+	font-weight: 300;
+}
+
+.header__contacts {
+	margin-left: 80px;
+}
+
+.header__contactsLinks {
+	padding-top: 2px;
+	padding-left: 56px;
+	background-image: url(../img/icons/call.svg);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+.header__contactsLinks a {
+	font-weight: 500;
+}
+
+.headings__luck {
+	position: absolute;
+	bottom: 0;
+	right: -36px;
+	color: #ff888a;
+	font-size: 35px;
+	font-family: 'HandelsonTwo';
+}
+
+.headings__announce {
+	color: #fee2ce;
+	font-size: 22px;
+	margin-top: 36px;
+}
+
+.headings__action {
+	margin-top: 36px;
+}
+
+.headings__actionBtn {
+	background-color: #141414;
+	color: #faebe4;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 14px 28px 14px 20px;
+	height: 64px;
+	border-radius: 32px;
+}
+
+.headings__actionBtn .icon {
+	margin-right: 10px;
+}
+
+.headings__actionBtn .icon svg path {
+	fill: #bd3336;
+}
+
+.headings__actionBtn:hover {
+	background-color: #211f1f
+}
+
+.headings__actionBtn:hover .icon svg path {
+	fill: #fee2ce;
+}
+
+.header-hero__background {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+
+.background-image {
+	position: absolute;
+	right: 50%;
+	margin-right: -356px;
+}
+
+.background-image_mao {
+	position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: 118px;
+}
+
+.scroll-down {
+	position: relative;
+	z-index: 3;
+	margin-top: 18px;
+}
+
+.scroll-down a {
+	font-family: 'HandelsonTwo';
+	color: #ff888a;
+	font-size: 32px;
+}
+
+.scroll-down .icon {
+	margin-top: 10px;
+}
+
+a.no-underline {
+	text-decoration: none
+}
+
+@media only screen and (min-width: 1220px) {
+	.container {
+		width: 1290px;
+		max-width: 1290px
+	}
 }
