@@ -212,6 +212,7 @@ a.no-underline {
 .benefits-hero {
 	position: relative;
 	margin-top: 20px;
+	padding-bottom: 16px;
 }
 
 .benefits__decor {
@@ -219,8 +220,9 @@ a.no-underline {
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 4vw;
-    max-height: 50px;
+    height: 5vw;
+    max-height: 80px;
+    z-index: 2;
 }
 
 .benefits__holder {
@@ -230,6 +232,14 @@ a.no-underline {
 .benefits__image {
 	text-align: center;
 	padding-left: 150px;
+}
+
+.benefits__imageScratches {
+    position: absolute;
+    bottom: -74px;
+    left: 50%;
+    margin-left: -190px;
+    z-index: 3;
 }
 
 .benefits__title {
@@ -328,6 +338,40 @@ a.no-underline {
 	padding-left: 26px;
 }
 
+.form {
+	display: flex;
+	align-items: center;
+}
+
+.form .form-group {
+	margin-bottom: 0
+}
+
+.formSubmitbtn {
+	background-color: #db3a3e;
+    color: #faebe4;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 32px 14px 32px;
+    height: 64px;
+    border-radius: 32px;
+}
+
+.today__hero {
+	background-color: #010101;
+	padding-top: 70px;
+}
+
+.today__title {
+	font-size: 56px;
+	line-height: 56px;
+	color: #fef4ed;
+	font-weight: 300
+}
+
+.today__wrapper {
+	margin-left: 80px;
+}
 
 @media only screen and (min-width: 1220px) {
 	.container {
