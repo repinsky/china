@@ -338,13 +338,33 @@ a.no-underline {
 	padding-left: 26px;
 }
 
+.radio-group__item + .radio-group__item 
+{
+	margin-left: 20px;
+}
+
 .form {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
+	margin: 0 -10px;
+	padding-bottom: 200px;
 }
 
 .form .form-group {
-	margin-bottom: 0
+	margin: 0 10px;
+}
+
+.form .form-group label.form-label {
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+
+.form-group_grow {
+	flex-grow: 1
+}
+
+.radio-group {
+	display: flex;
 }
 
 .formSubmitbtn {
@@ -359,6 +379,7 @@ a.no-underline {
 
 .today__hero {
 	background-color: #010101;
+	color: #fef4ed;
 	padding-top: 70px;
 }
 
@@ -371,6 +392,115 @@ a.no-underline {
 
 .today__wrapper {
 	margin-left: 80px;
+}
+
+.steps,
+.step {
+	display: flex;
+}
+
+.steps {
+	padding-left: 146px;
+	justify-content: space-between;
+	margin-top: 12px;
+	margin-bottom: 60px
+}
+
+.step {
+	position: relative;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.step__description {
+	padding-top: 32px;
+	text-align: center;
+	font-family: 'Segoe UI', arial;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 22px;
+	line-height: 26px;
+	flex-shrink: 0;
+}
+
+.step__arrow {
+	position: absolute;
+}
+
+.step_last .step__description {
+	text-align: left;
+}
+
+.step_first .step__description {
+	text-align: right;
+	margin-left: -120px;
+}
+
+.step_first .step__arrow {
+	left: -140px;
+    bottom: -30px;
+}
+
+.step_center .step__arrow {
+	top: -60px;
+    right: -72px;
+}
+
+.step_center .step__description {
+	margin-left: -12px;
+}
+
+.step__number {
+	font-family: 'HandelsonTwo';
+	font-size: 144px;
+	line-height: 144px;
+	color: #bd3336
+}
+
+.form-control {
+	border: 0 none;
+	height: 64px;
+	background-color: #1b1919;
+	box-shadow: none;
+	border-radius: 0;
+	outline: none;
+	border-bottom: 3px solid #bd3336;
+	color: #ffffff;
+	font-size: 18px;
+	font-family: 'Rubik', sans-serif;
+}
+
+.form-control:hover,
+.form-control:focus {
+	background-color: #211f1f;
+	box-shadow: none;
+	outline: none;
+	border-color: #bd3336;
+	color: #ffffff;
+}
+
+input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+
+input[type="radio"] + label {
+	border: 3px solid #363232;
+	margin-bottom: 0;
+	cursor: pointer;
+	color: #c7bbbb;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 28px;
+	font-weight: 500;
+}
+
+input[type="radio"]:checked + label {
+	border-color: #bd3336;
+	color: #fff;
 }
 
 @media only screen and (min-width: 1220px) {

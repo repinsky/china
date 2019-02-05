@@ -172,49 +172,58 @@
 					Начните работать <br>с Китаем сегодня
 				</div>
 				<div class="steps">
-					<div class="step">
+					<div class="step step_first">
+						<div class="step__arrow">
+							<img src="./img/ar1.png" alt="">
+						</div>
 						<div class="step__number">
 							1
 						</div>
 						<div class="step__description">
-							Свяжитесь с нами через форму обратной связи
+							Свяжитесь с нами<br>через форму обратной связи
 						</div>
 					</div>
-					<div class="step">
+					<div class="step step_center">
+						<div class="step__arrow">
+							<img src="./img/ar2.png" alt="">
+						</div>
 						<div class="step__number">
 							2
 						</div>
 						<div class="step__description">
-							Мы подберем поставщика по вашему запросу
+							Мы подберем поставщика <br>по вашему запросу
 						</div>
 					</div>
-					<div class="step">
+					<div class="step step_last">
 						<div class="step__number">
 							3
 						</div>
 						<div class="step__description">
-							Организуем закупку и доставку в ваш город
+							Организуем закупку <br>и доставку в ваш город
 						</div>
 					</div>
 				</div>
 				<div class="today__form">
 					<form action="" class="form">
-						<div class="form-group">
-							<label>Как к вам обращаться?</label>
+						<div class="form-group form-group_grow">
+							<label class="form-label">Как к вам обращаться?</label>
 							<input type="text" class="form-control" name="name">
 						</div>
-						<div class="form-group">
-							<label>Почта или телефон?</label>
+						<div class="form-group form-group_grow">
+							<label class="form-label">Почта или телефон?</label>
 							<input type="text" class="form-control" name="contact">
 						</div>
-						<div class="form-group radio-group">
-							<div class="radio-group__item">
-								<input type="radio" name="rg" value="опт" id="rg-1" checked="checked">
-								<label for="rg-1">Опт</label>
-							</div>
-							<div class="radio-group__item">
-								<input type="radio" name="rg" value="опт" id="rg-2">
-								<label for="rg-2">Розница</label>
+						<div class="form-group">
+							<label class="form-label">Выберите объем поставки:</label>
+							<div class="radio-group">
+								<div class="radio-group__item">
+									<input type="radio" name="rg" value="опт" id="rg-1" checked="checked">
+									<label for="rg-1">Опт</label>
+								</div>
+								<div class="radio-group__item">
+									<input type="radio" name="rg" value="опт" id="rg-2">
+									<label for="rg-2">Розница</label>
+								</div>
 							</div>
 						</div>
 						<div class="form-group">
