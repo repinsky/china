@@ -213,6 +213,10 @@ a.no-underline {
 	position: relative;
 	margin-top: 20px;
 	padding-bottom: 16px;
+	background-image: url(../img/sunburst_to_up.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 
 .benefits__decor {
@@ -501,6 +505,60 @@ input[type="radio"] + label {
 input[type="radio"]:checked + label {
 	border-color: #bd3336;
 	color: #fff;
+}
+
+.clients {
+	margin-top: 40px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.clients__hero {
+	padding: 100px 0 90px;
+	background: url(../img/3bottom.png) top center, url(../img/sunburst_to_down.png) top center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: #ffdbc3;
+}
+
+.clients__heroTitle {
+	font-family: 'HandelsonTwo';
+	font-size: 64px;
+	line-height: 64px;
+	color: #bd3336;
+	text-align: center;
+}
+
+.client {
+	max-width: 300px;
+	text-align: center;
+}
+
+.client__name {
+	font-family: 'Segoe UI', arial;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 22px;
+	line-height: 26px;
+	margin-top: 8px;
+}
+
+.client__announce {
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 16px;
+}
+
+.client__image {
+	height: 224px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.star {
+	padding-top: 66px;
 }
 
 @media only screen and (min-width: 1220px) {
