@@ -352,10 +352,30 @@ a.no-underline {
 	align-items: flex-end;
 	margin: 0 -10px;
 	padding-bottom: 200px;
+	color: #fef4ed;
+}
+
+.faq__form {
+	margin-top: 74px;
+}
+
+.faq__form .form {
+	flex-wrap: wrap;
 }
 
 .form .form-group {
 	margin: 0 10px;
+}
+
+.faq__form .form-group-action {
+	margin-top: 54px;
+	width: 100%;
+	text-align: center
+}
+
+.form .form-group.form-group-text {
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 .form .form-group label.form-label {
@@ -378,6 +398,9 @@ a.no-underline {
     font-weight: 500;
     padding: 14px 32px 14px 32px;
     height: 64px;
+}
+
+.formSubmitbtn_br {
     border-radius: 32px;
 }
 
@@ -530,6 +553,10 @@ input[type="radio"]:checked + label {
 	line-height: 64px;
 	color: #bd3336;
 	text-align: center;
+}
+
+.faq__title {
+	line-height: 38px;
 }
 
 .client {
@@ -704,4 +731,99 @@ input[type="radio"]:checked + label {
   100%{
     transform: translate3d(-1920px, 0, 0);
   }
+}
+
+.faq {
+	margin: auto;
+	max-width: 940px;
+}
+
+.faq__list {
+	margin-top: 40px;	
+}
+
+.faq__list-item {
+	margin-bottom: 10px;
+	font-family: 'Segoe UI', arial;
+}
+
+.collapse-toggle > .collapse__icon:after,
+.collapse-toggle > .collapse__icon:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-image: url(/img/icons/minus.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+    -webkit-transition-duration: 180ms;
+    transition-duration: 180ms;
+}
+
+.collapse-toggle .collapse__icon:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.collapse-toggle .collapse__icon:before {
+    background-image: url(/img/icons/plus.svg);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.collapse-toggle.collapsed > .collapse__icon:after {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.collapse-toggle.collapsed > .collapse__icon:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.collapse-toggle {
+	cursor: pointer;
+	position: relative;
+	color: #ffdbc3;
+	font-size: 20px;
+	font-weight: 600;
+	background-color: #1b1919;
+	border: 0 none;
+	height: 70px;
+	text-align: left;
+	outline: none;
+	box-shadow: none;
+	width: 100%;
+	padding: 12px 60px 12px 26px;
+}
+
+.collapse-toggle:hover {
+	background-color: #211f1f
+}
+
+.collapse-toggle .collapse__icon {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	width: 32px;
+    height: 32px;
+    margin-top: -16px;
+}
+
+.collapse-body {
+	color: #ffdbc3;
+	font-size: 20px;
+	line-height: 27px;
+	padding: 26px
 }
